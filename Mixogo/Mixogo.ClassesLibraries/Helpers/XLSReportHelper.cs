@@ -58,11 +58,8 @@ namespace Mixogo.ClassesLibraries.Helpers
         {
             try
             {
-                //Iteration in the files array
                 for (int i = 0; i < xmlPaths.Length; i++)
                 {
-
-
                     var fileHelper = new FileManagementHelper();
                     FileInfo file = new FileInfo(string.Format(@"{0}", destinationExcelFile));
                         using (ExcelPackage excelPackage2 = new ExcelPackage(file))
@@ -77,7 +74,7 @@ namespace Mixogo.ClassesLibraries.Helpers
                         }
 
                     }
-                
+           
             }
             catch (Exception ex)
             {
