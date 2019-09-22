@@ -10,7 +10,7 @@ namespace Mixogo.Console
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //System.Console.WriteLine(string.Format("Strings {0}, {1}", args[0], "SQQQ"));
             /*
@@ -19,8 +19,8 @@ namespace Mixogo.Console
             System.Console.WriteLine("Done");
             */
 
-            var pdf = new PDFReportHelper();
-            pdf.ConfigureDocument();
+            //var pdf = new XLSReportHelper();
+            //pdf.ConfigureDocument();
         }
     }
 }
