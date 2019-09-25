@@ -43,6 +43,9 @@
     <Reference Include="IronPdf, Version=2019.6.5.25146, Culture=neutral, PublicKeyToken=94e1c31412563c75, processorArchitecture=MSIL">
       <HintPath>..\packages\IronPdf.2019.6.5.41\lib\net40\IronPdf.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="QRCoder, Version=1.3.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\QRCoder.1.3.6\lib\net40\QRCoder.dll</HintPath>
@@ -67,7 +70,14 @@
     <Compile Include="Helpers\FileManagementHelper.cs" />
     <Compile Include="Helpers\PDFReportHelper.cs" />
     <Compile Include="Helpers\XLSReportHelper.cs" />
-    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\Complemento.cs" />
+    <Compile Include="Models\Concepto.cs" />
+    <Compile Include="Models\Emisor.cs" />
+    <Compile Include="Models\Impuestos.cs" />
+    <Compile Include="Models\Comprobante.cs" />
+    <Compile Include="Models\Receptor.cs" />
+    <Compile Include="Models\TimbreFiscalDigital.cs" />
+    <Compile Include="Models\Traslado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

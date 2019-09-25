@@ -27,7 +27,7 @@ namespace Mixogo.ClassesLibraries.Helpers
         }
 
 
-        public void ReplaceValuesInTheBaseTemplate(Invoice invoice)
+        public void ReplaceValuesInTheBaseTemplate(Comprobante invoice)
         {
 
         }

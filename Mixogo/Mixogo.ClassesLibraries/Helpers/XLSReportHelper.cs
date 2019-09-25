@@ -3,6 +3,7 @@ using System.IO;
 using System;
 using System.Xml;
 using Mixogo.ClassesLibraries.Constants;
+using Newtonsoft.Json;
 
 namespace Mixogo.ClassesLibraries.Helpers
 {
@@ -66,9 +67,13 @@ namespace Mixogo.ClassesLibraries.Helpers
                         {
                             ExcelWorkbook excelWorkBook = excelPackage2.Workbook;
                             var excelWorksheet = excelWorkBook.Worksheets[1];
-                            excelWorksheet.Cells[2, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
-                            excelWorksheet.Cells[3, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
-                            excelWorksheet.Cells[4, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
+
+                            var currentXMLDoc = new XmlDocument();
+                            currentXMLDoc.LoadXml(fileHelper.GetFileContent(xmlPaths[i]));
+                            string jsonText = JsonConvert.SerializeXmlNode(currentXMLDoc);
+                            //excelWorksheet.Cells[2, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
+                            //excelWorksheet.Cells[3, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
+                            //excelWorksheet.Cells[4, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
 
                         excelPackage2.Save();
                         }

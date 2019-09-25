@@ -5,9 +5,8 @@ using System.Text;
 
 namespace Mixogo.ClassesLibraries.Models
 {
-    public class Invoice
+    public class Complemento
     {
-        public string InvoiceNumber { get; set; }
-
+        public TimbreFiscalDigital TimbreFiscalDigital { get; set; }
     }
 }
