@@ -174,24 +174,7 @@ namespace Mixogo.ClassesLibraries.Helpers
                         //ESTADO (26)
                         excelWorksheet.Cells[2, 26].Value = "VIGENTE";
 
-                        //ESTADO (27)
-                        //excelWorksheet.Cells[2, 27].Value = "VIGENTE";
-                        //excelWorksheet.Cells[2, 14].Value = comprobante[i].cfdiComprobante..ToString();
-                        //excelWorksheet.Cells[rowIndex, i+2].Value = comprobante[i].cfdiComprobante.Fecha;
-                        //excelWorksheet.Cells[2,2].Value = comprobante[i].cfdiComprobante.Fecha;
-
-                        /*
-                        excelWorksheet.Cells[rowIndex, 3].Value = comprobante[i].cfdiComprobante.TipoDeComprobante;
-                        excelWorksheet.Cells[rowIndex, 4].Value = comprobante[i].cfdiComprobante.Receptor.Rfc;
-                        excelWorksheet.Cells[rowIndex, 5].Value = comprobante[i].cfdiComprobante.Receptor.Nombre;
-                        excelWorksheet.Cells[rowIndex, 6].Value = comprobante[i].cfdiComprobante.cfdiEmisor.Rfc;
-                        excelWorksheet.Cells[rowIndex, 7].Value = comprobante[i].cfdiComprobante.cfdiEmisor.Nombre;
-                        excelWorksheet.Cells[rowIndex, 8].Value = comprobante[i].cfdiComprobante.Serie;
-                        excelWorksheet.Cells[rowIndex, 9].Value = comprobante[i].cfdiComprobante.Folio;
-                        */
-                        //excelWorksheet.Cells[StartingRowIndex + i, i + 5].Value = comprobante[i].cfdiComprobante.;
-                        //excelWorksheet.Cells[3, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
-                        //excelWorksheet.Cells[4, i+1].Value = fileHelper.GetFileContent(xmlPaths[i]);
+                        
 
                         excelPackage2.Save();
                         completed = true;
@@ -209,12 +192,12 @@ namespace Mixogo.ClassesLibraries.Helpers
         }
 
 
-        public string getConeptosString(CfdiConceptos conceptos)
+        public string getConeptosString(CfdiConceptos conceptsList)
         {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < conceptos.Conceptos.Length; i++)
+            for (int i = 0; i < conceptsList.Conceptos.Length; i++)
             {
-                sb.Append(conceptos.Conceptos[i].Descripcion);
+                sb.Append(conceptsList.Conceptos[i].Descripcion);
                 sb.Append("\n");
             }
             return sb.ToString();

@@ -49,11 +49,11 @@ namespace Mixogo.Forms
             ExcelHelper = new XLSReportHelper();
             if(ExcelHelper.AddDocumentContent(DestinationExcelFilePath, XMLFilesPaths))
             {
-                MessageBox.Show("Listo");
+                MessageBox.Show("Done");
             }
             else
             {
-                MessageBox.Show("Hubo un error");
+                MessageBox.Show("There was an error");
             }
             
             
