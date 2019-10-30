@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Newtonsoft.Json;
 
 namespace Mixogo.ClassesLibraries.Models
 {
     public class Receptor
     {
-        public string RFC { get; set; }
+        [JsonProperty("Rfc")]
+        public string Rfc { get; set; }
+
+        [JsonProperty("Nombre")]
         public string Nombre { get; set; }
+
+        [JsonProperty("UsoCFDI")]
         public string UsoCFDI { get; set; }
     }
+
 }

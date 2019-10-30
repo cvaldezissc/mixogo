@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Newtonsoft.Json;
 
 namespace Mixogo.ClassesLibraries.Models
 {
     public class Impuestos
     {
-        public double TotalImpuestosTrasladados { get; set; }
-        public List<Traslado> Traslados { get; set; }
-
+        [JsonProperty("cfdi:Traslados")]
+        public Traslados Traslados { get; set; }
     }
+
 }

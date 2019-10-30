@@ -1,17 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Newtonsoft.Json;
 
 namespace Mixogo.ClassesLibraries.Models
 {
     public class Traslado
     {
-        public double Base { get; set; }
-        public string Impuesto { get; set; }
-        public string TipoFactor { get; set; }
-        public double TasaOCuota { get; set; }
-        public double Importe { get; set; }
+        [JsonProperty("Base")]
+        public string Base { get; set; }
 
+        [JsonProperty("Impuesto")]
+        public double Impuesto { get; set; }
+
+        [JsonProperty("TipoFactor")]
+        public string TipoFactor { get; set; }
+
+        [JsonProperty("TasaOCuota")]
+        public double TasaOCuota { get; set; }
+
+        [JsonProperty("Importe")]
+        public double Importe { get; set; }
     }
+
 }

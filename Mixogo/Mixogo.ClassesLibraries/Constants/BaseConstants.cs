@@ -7,7 +7,7 @@ namespace Mixogo.ClassesLibraries.Constants
 {
     public static class BaseConstants
     {
-        public static readonly string SHEET1_DEFAULT_NAME = "Hoja de Excel 1";
+        public static readonly string SHEET1_DEFAULT_NAME = "Resumen";
         public static readonly string INVOICE_VERSION_TO_READ = "v3.3";
         public static readonly string XML_EXTENSION_POSFIX = "*.xml";
         public static readonly string EXCEL_FILES_FILTER_SFD = "Excel 2003 File|*.xls|Excel 2007,2010,2013,2016,2019 File|*.xlsx";
@@ -19,7 +19,7 @@ namespace Mixogo.ClassesLibraries.Constants
         public static List<string> GetExcelFormatColumnTitles()
         {
             return new List<string>()
-            {
+            {/*
                 "No.",
                 "Fecha",	
                 "TipoDocumento",	
@@ -35,6 +35,33 @@ namespace Mixogo.ClassesLibraries.Constants
                 "Descuento",	
                 "Total",
                 "Estado"
+                */
+                "COUNT",
+                "FECHA",
+                "TIPO",
+                "RFC_REC",
+                "RECEPTOR",
+                "RFC_EMI",
+                "EMISOR",
+                "SERIE",
+                "FOLIO",
+                "UUID",
+                "METODOPAGO",
+                "NUMCTAPAGO",
+                "FORMAPAGO",
+                "MONEDA",
+                "TIPOCAMBIO",
+                "SUBTOTAL",
+                "IMPUESTOSTRAS",
+                "IMPUESTOSTRASIVA",
+                "IMPUESTOSTRASIEPS",
+                "IMPUESTOSRETE",
+                "IMPUESTOSRETIVA",
+                "IMPUESTOSRETIEPS",
+                "DESCUENTOS",
+                "TOTAL",
+                "CONCEPTOS",
+                "ESTADO"
             };
         }
 

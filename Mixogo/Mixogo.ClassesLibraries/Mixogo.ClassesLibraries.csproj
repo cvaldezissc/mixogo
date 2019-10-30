@@ -59,6 +59,7 @@
       <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,14 +71,18 @@
     <Compile Include="Helpers\FileManagementHelper.cs" />
     <Compile Include="Helpers\PDFReportHelper.cs" />
     <Compile Include="Helpers\XLSReportHelper.cs" />
-    <Compile Include="Models\Complemento.cs" />
+    <Compile Include="Models\CfdiConceptos.cs" />
+    <Compile Include="Models\Comprobante.cs" />
     <Compile Include="Models\Concepto.cs" />
+    <Compile Include="Models\Elements.cs" />
     <Compile Include="Models\Emisor.cs" />
     <Compile Include="Models\Impuestos.cs" />
-    <Compile Include="Models\Comprobante.cs" />
+    <Compile Include="Models\Invoice.cs" />
     <Compile Include="Models\Receptor.cs" />
-    <Compile Include="Models\TimbreFiscalDigital.cs" />
+    <Compile Include="Models\TfdTimbrefiscaldigital.cs" />
     <Compile Include="Models\Traslado.cs" />
+    <Compile Include="Models\Traslados.cs" />
+    <Compile Include="Models\Xml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

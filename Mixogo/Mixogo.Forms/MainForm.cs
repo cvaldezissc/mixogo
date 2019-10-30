@@ -47,7 +47,14 @@ namespace Mixogo.Forms
         private void BtnExport_Click(object sender, EventArgs e)
         {
             ExcelHelper = new XLSReportHelper();
-            ExcelHelper.AddDocumentContent(DestinationExcelFilePath, XMLFilesPaths);
+            if(ExcelHelper.AddDocumentContent(DestinationExcelFilePath, XMLFilesPaths))
+            {
+                MessageBox.Show("Listo");
+            }
+            else
+            {
+                MessageBox.Show("Hubo un error");
+            }
             
             
 
